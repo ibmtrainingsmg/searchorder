@@ -30,7 +30,7 @@ public class OrderSearchController {
 	 * @return zero or matching order
 	 */
 	@GetMapping("/order/{id}")
-	Optional<Order> getOrder(@PathVariable("id") String orderId) {
-		return orderService.getOrder(orderId);
+	Optional<Order> getOrderById(@PathVariable("id") String orderId) {
+		return orderService.getOrderById(orderId);
 	}
 }

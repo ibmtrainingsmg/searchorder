@@ -24,9 +24,12 @@ public class Order {
 	public float getPrice() {
 		return price;
 	}
-
+	/**
+	 * handling exception
+	 * @param price
+	 */
 	public void setPrice(float price) {
-		if(price<=0) {
+		if (price <= 0) {
 			throw new IllegalArgumentException("price cannot be negative");
 		}
 		this.price = price;
@@ -39,5 +42,5 @@ public class Order {
 	public void setItem(String item) {
 		this.item = item;
 	}
-	
+
 }
